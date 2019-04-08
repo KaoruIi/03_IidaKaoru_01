@@ -1,0 +1,365 @@
+/* ここから下に記述していきましょう */
+
+* {
+  box-sizing: border-box;
+}
+
+/*
+メモ
+css側でコメント機能を使いたいときは
+mac コマンドキー + /(スラッシュ)
+windows コントロールキー + /(スラッシュ)
+
+背景画像
+background: url(xxxx)
+
+文字真ん中
+text-align: center
+
+横並び
+display:flex
+横並びにするときは必ず、display:flexを使ってからじゃないと横並びにならないので注意
+display:flexを使ったあとに、横を制御する[justify-content: xxx]を使ったりする
+
+
+*/
+
+body{
+    color: #333333;
+    font-size: 16px;
+}
+
+img{
+    max-width: 100%;
+    height: auto;
+    display: flex;
+}
+
+.text-center{
+    text-align: center;
+}
+
+.btn{
+    display: block;
+    margin:auto;
+    width: 300px;
+    height: 60px;
+    font-size: 18px;
+    color: #ffffff;
+    background-color: #ffd61a;
+    text-align: center;
+    padding-top:21px;
+    padding-bottom:21px;
+}
+
+ul li{
+    list-style: none;
+  }
+
+/* -------------------
+header
+--------------------*/
+
+.header-wrapper{
+    display: flex;
+    justify-content: space-between;
+    height: 121px;
+    align-items: center;
+
+}
+
+.nav-list{
+    display: flex;
+    float: right;
+}
+
+.nav-item{
+    margin: 50px 50px 50px 0;
+    color: #333333;
+    font-size: 21px;
+}
+
+/* -------------------
+main
+--------------------*/
+
+.mainvisual{
+    height: 500px;
+    background: url(../img/mainbg.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.mainvisual h2{
+    color: white;
+    font-size: 50px;
+    text-align: center;
+    padding:195px 0 30px;
+    font-weight:bold;
+
+}
+
+.mainvisual p{
+    color: white;
+    font-size: 30px;
+    text-align: center;
+    font-weight:bold;
+    padding:0 0 195px;
+
+}
+
+/* -------------------
+about
+--------------------*/
+
+.about{
+    padding:60px 0;
+}
+
+.about-img{
+    display: flex;
+    justify-content: center;
+    padding-top:80px;
+}
+
+
+.about-wrapper {
+    width: 1366px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.about-title{
+    color: #ffd61a;
+    font-size: 24px;
+    font-weight:bold;
+    margin:0 0 30px;
+}
+
+.about-subtitle{
+    color: #333333;
+    font-size: 18px;
+    margin:0 0 60px;
+}
+
+.about-text{
+    color: #333333;
+    font-size: 16px;
+    line-height: 2;
+    text-align: center;
+}
+
+/* -------------------
+news
+--------------------*/
+
+.news{
+    padding:60px 0;
+}
+
+.news-title{
+    color: #ffd61a;
+    font-size: 24px;
+    font-weight:bold;
+    margin:0 0 30px;
+}
+
+.news-subtitle{
+    color: #333333;
+    font-size: 18px;
+    margin:0 0 60px;
+}
+
+.news-wrapper{
+    max-width: 1366px;
+    margin: auto;
+
+}
+
+.news-img{
+    margin: 0 0 30px;
+}
+
+.news-list{
+    display: flex;
+    margin:0 0 60px;
+    justify-content: center;
+}
+
+.news-item{
+    width: 300px;
+    padding-right: 30px;
+}
+
+.news-date{
+    color: #333333;
+    font-size: 16px;
+    text-align: left;
+    padding: 0 0 24px;
+
+}
+
+.news-text{
+    color: #333333;
+    font-size: 16px;
+    line-height: 1;
+    text-align: left;
+}
+
+
+/* -------------------
+access
+--------------------*/
+
+.access{
+    background-color: #fafafa;
+    padding:60px 0;
+}
+
+.access-title{
+    color: #333333;
+    font-size: 24px;
+    font-weight:bold;
+    margin:0 0 30px;
+}
+
+.access-subtitle{
+    color: #333333;
+    font-size: 18px;
+    margin:0 0 60px;
+}
+.access-text{
+    color: #333333;
+    font-size: 16px;
+    line-height: 1;
+    text-align: left;
+}
+
+.ggmap {
+    position: relative;
+    padding-bottom: 56.25%;
+    margin: 60px 0;
+    height: 0;
+    overflow: hidden;
+    }
+     
+    .ggmap iframe,
+    .ggmap object,
+    .ggmap embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    }
+
+table{
+    text-align: left;
+    display: flex;
+    justify-content:center;
+
+}
+      
+table td {
+    padding: 0 30px 30px 0;
+    height: 50px;
+
+}
+
+/* -------------------
+contact
+--------------------*/
+/* "詳細"のフォームのbottomボーダーが短い */
+/* フォーム一番上の太い枠線が出ない */
+
+.contact{
+    padding:60px 0;
+
+}
+
+.form-wrapper{
+    margin:auto;
+    width: 600px;
+
+}
+
+.form-inner{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 70px 0 30px;
+
+    
+}
+
+.form-item p{
+    margin-bottom: 24px;
+
+}
+
+dl{
+    display: flex;
+    border-bottom: 1px solid #bfbfbf;
+    width: 100%;
+}
+
+dt{
+    padding: 10px;
+    border-right: 1px solid #bfbfbf;
+}
+
+dd{
+    padding: 10px;
+}
+
+
+.form-title{
+    width: 240px;
+    margin-left: 16px;
+    text-align: left;
+}
+
+.form-item{
+    width: 328px;
+    margin: 0 0 30px 8px;
+}
+
+.form-parts{ 
+    border: solid 1px #bfbfbf;
+    font-size: 16px;
+    margin: 10px 0 0 8px; 
+    width: 100%;
+    text-align: center;
+}
+
+.contact-title{
+    color: #333333;
+    font-size: 24px;
+    font-weight:bold;
+    margin:0 0 30px;
+}
+    
+.contact-subtitle{
+    color: #333333;
+    font-size: 18px;
+    margin:0 0 60px;
+}
+    
+.contact-text{
+    color: #333333;
+    font-size: 16px;
+    text-align: center;
+    padding-bottom: 70px;
+}
+
+/* -------------------
+footer
+--------------------*/
+
+.footer {
+    width: 100%;
+    padding: 30px 0;
+    background-color: #707070;
+    color: #ffffff;
+    text-align: center;
+  }
